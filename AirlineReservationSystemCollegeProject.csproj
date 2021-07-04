@@ -1,0 +1,449 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8E7E5BC7-2420-4142-BDA9-81CC19D10F2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AirlineReservationSystemCollegeProject</RootNamespace>
+    <AssemblyName>AirlineReservationSystemCollegeProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.90\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BookingHolidayPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingHolidayPackage.Designer.cs">
+      <DependentUpon>BookingHolidayPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BookingPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookingPage.Designer.cs">
+      <DependentUpon>BookingPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CancelFlightTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelFlightTicket.Designer.cs">
+      <DependentUpon>CancelFlightTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FlightBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlightBooking.Designer.cs">
+      <DependentUpon>FlightBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotelBooking.Designer.cs">
+      <DependentUpon>HotelBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_DatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login_DatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login_DatabaseDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login_DatabaseDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login_DatabaseDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login_DatabaseDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login_DatabaseDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login_DatabaseDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login_DatabaseDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login_DatabaseDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login_DatabaseDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login_DatabaseDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login_DatabaseDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login_DatabaseDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login_DatabaseDataSet7.cs">
+      <DependentUpon>Login_DatabaseDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login_DatabaseDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login_DatabaseDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login_DatabaseDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login_DatabaseDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Login_DatabaseDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login_DatabaseDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Record_Holidays_packages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Record_Holidays_packages.Designer.cs">
+      <DependentUpon>Record_Holidays_packages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Record_New_Flight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Record_New_Flight.Designer.cs">
+      <DependentUpon>Record_New_Flight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Record_New_Hotels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Record_New_Hotels.Designer.cs">
+      <DependentUpon>Record_New_Hotels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_DatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login_DatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Passanger Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passanger Details.Designer.cs">
+      <DependentUpon>Passanger Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View_Passangers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Passangers.Designer.cs">
+      <DependentUpon>View_Passangers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Scheduled_Flights.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Scheduled_Flights.Designer.cs">
+      <DependentUpon>View_Scheduled_Flights.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Scheduled_Holiday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Scheduled_Holiday.Designer.cs">
+      <DependentUpon>View_Scheduled_Holiday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View_Scheduled_Hotels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Scheduled_Hotels.Designer.cs">
+      <DependentUpon>View_Scheduled_Hotels.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BookingHolidayPackage.resx">
+      <DependentUpon>BookingHolidayPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookingPage.resx">
+      <DependentUpon>BookingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelFlightTicket.resx">
+      <DependentUpon>CancelFlightTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlightBooking.resx">
+      <DependentUpon>FlightBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelBooking.resx">
+      <DependentUpon>HotelBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Record_Holidays_packages.resx">
+      <DependentUpon>Record_Holidays_packages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Record_New_Flight.resx">
+      <DependentUpon>Record_New_Flight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Record_New_Hotels.resx">
+      <DependentUpon>Record_New_Hotels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passanger Details.resx">
+      <DependentUpon>Passanger Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View_Passangers.resx">
+      <DependentUpon>View_Passangers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Scheduled_Flights.resx">
+      <DependentUpon>View_Scheduled_Flights.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Scheduled_Holiday.resx">
+      <DependentUpon>View_Scheduled_Holiday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Scheduled_Hotels.resx">
+      <DependentUpon>View_Scheduled_Hotels.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Login_DatabaseDataSet.xsc">
+      <DependentUpon>Login_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login_DatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Login_DatabaseDataSet.xss">
+      <DependentUpon>Login_DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet1.xsc">
+      <DependentUpon>Login_DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login_DatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Login_DatabaseDataSet1.xss">
+      <DependentUpon>Login_DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet10.xsc">
+      <DependentUpon>Login_DatabaseDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login_DatabaseDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Login_DatabaseDataSet10.xss">
+      <DependentUpon>Login_DatabaseDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet2.xsc">
+      <DependentUpon>Login_DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login_DatabaseDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Login_DatabaseDataSet2.xss">
+      <DependentUpon>Login_DatabaseDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet3.xsc">
+      <DependentUpon>Login_DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login_DatabaseDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Login_DatabaseDataSet3.xss">
+      <DependentUpon>Login_DatabaseDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet4.xsc">
+      <DependentUpon>Login_DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login_DatabaseDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Login_DatabaseDataSet4.xss">
+      <DependentUpon>Login_DatabaseDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet5.xsc">
+      <DependentUpon>Login_DatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login_DatabaseDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Login_DatabaseDataSet5.xss">
+      <DependentUpon>Login_DatabaseDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet6.xsc">
+      <DependentUpon>Login_DatabaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login_DatabaseDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Login_DatabaseDataSet6.xss">
+      <DependentUpon>Login_DatabaseDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet7.xsc">
+      <DependentUpon>Login_DatabaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login_DatabaseDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Login_DatabaseDataSet7.xss">
+      <DependentUpon>Login_DatabaseDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet8.xsc">
+      <DependentUpon>Login_DatabaseDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login_DatabaseDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Login_DatabaseDataSet8.xss">
+      <DependentUpon>Login_DatabaseDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet9.xsc">
+      <DependentUpon>Login_DatabaseDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Login_DatabaseDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Login_DatabaseDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Login_DatabaseDataSet9.xss">
+      <DependentUpon>Login_DatabaseDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Login_Database.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Login_Database_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Login_Database.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
